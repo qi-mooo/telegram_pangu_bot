@@ -7,7 +7,7 @@ api_id = os.getenv("API_ID")
 api_hash = os.getenv("API_HASH")
 
 # 创建一个客户端
-app = Client("my_account")
+app = Client("my_account", api_id=api_id, api_hash=api_hash)
 
 # 添加一个消息过滤器，当收到消息时，判断是否为机器人发出的消息，如果是，则不处理
 @app.on_message(filters.me & filters.text & ~filters.command([]) & ~filters.bot)

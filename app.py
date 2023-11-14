@@ -21,7 +21,7 @@ def format_pangu(client, message):
     if original_text != formatted_text:
         message.edit(formatted_text)
         # 打印编辑后的消息的ID、原始文本和格式化后的文本
-        print(f"Edited message: {message.message_id}. Original text: {original_text}. Formatted text: {formatted_text}.")
+        print(f"Original text: {original_text}. Formatted text: {formatted_text}.")
 
 
 # 运行客户端
